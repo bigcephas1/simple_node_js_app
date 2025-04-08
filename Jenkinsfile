@@ -2,13 +2,13 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "your-dockerhub-username/ci-cd-pipeline-app"
+        IMAGE_NAME = "peterukpabi4/ci-cd-pipeline-app"
     }
 
     stages {
         stage('Clone Repo') {
             steps {
-                git 'https://github.com/your-username/ci-cd-pipeline-app.git'
+                git 'https://github.com/bigcephas1/simple_node_js_app.git'
             }
         }
 
